@@ -10,7 +10,7 @@
             credentials: 'same-origin',
             body: JSON.stringify({ email: email.value, password: password.value})
         })
-
+        console.log(response.status)
     }
 </script>
 

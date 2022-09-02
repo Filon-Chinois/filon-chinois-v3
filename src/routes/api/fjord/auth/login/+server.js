@@ -14,13 +14,10 @@ export const POST = async ({ request, url }) => {
 
     if (error) {
         errors.form = error.message;
-        return {
-            status: 400,
-            body: {
-                errors,
-                values
-            }
-        };
+        return new Response({ errors,
+            values },{
+            status: 400
+        })
     }
 
     if (session) {
@@ -42,8 +39,8 @@ export const POST = async ({ request, url }) => {
             });
         headers['Set-Cookie'] = cookies;
     }
-    return {
+    return new Response(null, {
         status: 303,
         headers
-    };
+    })
 };
