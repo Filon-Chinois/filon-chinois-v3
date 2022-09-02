@@ -7,6 +7,15 @@ export const L = writable({
             offline: {
                 message: "Le Filon Chinois, c'est un site dédié à l'apprentissage du mandarin pour les débutants. Il a été créé afin de fournir un outil multimédia pratique regroupant plusieurs avantages et ressources en un endroit, dont une multitude d'exercices avec rétroaction immédiate, des jeux de mémoires et des fonctions technologiques comme la synthèse vocale. Le site est en constante évolution afin de pouvoir mieux vous aider alors ne soyez pas surpris si le contenu a changé depuis votre dernière visite! Bon apprentissage!"
             },
+            login: {
+                email: "Email",
+                motDePasse: "Mot de passe",
+                seConnecter: "Se connecter!",
+                sInscrire: "S'inscrire!",
+                langue: "Langue",
+                universite: "Institution",
+                nom: "Nom"
+            }
         },
         en: {
             titre: "Filon-Chinois",
